@@ -27,14 +27,19 @@ const MainPage = () => {
             {title:Math.max(title - 10, 0 )}
         ))
     }
+    const Reset = () =>{
+        dispatch(mainInfo(
+            {title: 0}
+        ))
+    }
 
     return(
         <div className="app">
-            <p>Счетчик</p>
             <h1>{title}</h1>
             <div className="buttons">
                 <button className='increase' onClick={Increases}>+10</button>
                 <button className='decrease' onClick={Increase}>+1</button>
+                <button className='reset' onClick={Reset}>reset</button>
                 <button className='increases' onClick={Decrease}>-1</button>
                 <button className='decreases' onClick={Decreases}>-10</button>
             </div>

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     background-color: darkblue;
-    width: 300px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -12,16 +12,12 @@
     h1{
         color: snow;
     }
-    p{
-        color: snow;
-        letter-spacing: 2px;
-    }
+
 }
 .buttons{
     display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+
 }
 .increase{
     width: 50px;
@@ -51,5 +47,11 @@
     background-color: snow;
     border: 2px solid white;
 }
-
+.reset{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: snow;
+    border: 2px solid white;
+}
 
